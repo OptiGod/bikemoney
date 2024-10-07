@@ -1,49 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>쇼핑몰</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.responsivevoice.org/responsivevoice.js?key=8dj1EgpE"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>도학초 안내팻말</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>쇼핑몰</h1>
-        <div class="product">
-            <div class="product-name">긴 한바퀴</div>
-            <div class="product-price">500원</div>
-            <button class="btn" onclick="addToCart(500)">구매하기</button>
-        </div>
-        <div class="product">
-            <div class="product-name">작은 1바퀴</div>
-            <div class="product-price">100원</div>
-            <button class="btn" onclick="addToCart(100)">구매하기</button>
-        </div>
-        <div class="total-amount">총 금액: <span id="total">0</span>원</div>
-        <div class="buttons">
-            <div class="btn" onclick="showPaymentOptions()">청구하기</div>
-            <div class="btn" onclick="resetAmount()">금액 리셋</div>
-            <div class="btn" id="readBtn" onclick="readTotalAmount()">읽기</div> 
-        </div>
-        <div id="payment-options" class="hidden">
-            <div class="btn" onclick="showAccountInfo()">계좌이체</div>
-            <div class="btn" onclick="processCardPayment()">카드 결제</div>
-        </div>
-        <div id="account-info" class="hidden">
-            <p>카카오뱅크: 7777-03-2467083</p>
-            <p>토스뱅크: 1908-8134-3094</p>
-        </div>
-
-        <div id="payment-modal" class="modal hidden">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div class="checkmark">&#10004;</div>
-                <p id="modal-message"></p>
-            </div>
-        </div>
+  <div class="slide-container">
+    <div class="slide" id="slide-1">
+      <img src="1.jpg" alt="슬라이드 1">
     </div>
-
-    <script src="script.js"></script>
+    <div class="slide" id="slide-2">
+      <img src="2.jpg" alt="슬라이드 2">
+    </div>
+    <div class="slide" id="slide-3">
+      <img src="3.jpg" alt="슬라이드 3">
+    </div>
+    <div class="slide" id="slide-4">
+      <img src="4.jpg" alt="슬라이드 4">
+    </div>
+    <div class="slide" id="slide-5">
+      <img src="5.jpg" alt="슬라이드 5">
+    </div>
+    <div class="slide" id="slide-6">
+      <img src="6.jpg" alt="슬라이드 6">
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
